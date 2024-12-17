@@ -50,6 +50,14 @@ ASCII mandelbrot set
 ## Testing with qemu
 
     qemu-system-riscv32 -machine virt -nographic -bios foo.bin
+    OR USE: zig build run
+
+## Testing with qemu and gdb
+
+    qemu-system-riscv32 -machine virt -nographic -s -S -bios foo.bin
+    OR USE: zig build gdb
+    then connect with for example: $ gdb-multiarch.exe foo.elf 
+
 
 ## Libc usage
 
