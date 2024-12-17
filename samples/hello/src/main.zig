@@ -4,6 +4,7 @@ const UART_BUF_REG_ADDR:usize = 0x10000000;
 const syscon = @volatileCast(@as(*u32, @ptrFromInt(SYSCON_REG_ADDR)));
 const uart_buf_reg = @volatileCast(@as(*u32, @ptrFromInt(UART_BUF_REG_ADDR)));
 
+
 export fn _start() noreturn {
     asm volatile ("la sp, _sstack");    // set stack pointer
 

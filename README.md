@@ -72,3 +72,8 @@ The `term` struct could be replaced by this minimal stub:
         }
     };
 
+
+
+VS Setup quirks using qemu and debug from:
+https://www.youtube.com/watch?v=NbZDowmXzZs
+https://github.com/chuckb/riscv-helloworld-c/tree/NbZDowmXzZs
